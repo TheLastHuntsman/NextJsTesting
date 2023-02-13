@@ -68,6 +68,7 @@ export default function Navbar() {
                 <NavbarButton pageLink="/counter" text="counter" navbar={Navbar} setNavbar={setNavbar} />
                 <NavbarButton pageLink="/snake" text="snake" navbar={Navbar} setNavbar={setNavbar} />
                 <NavbarButton pageLink="/login" text="login" navbar={Navbar} setNavbar={setNavbar} />
+                <NavbarButton pageLink="/todos" text="todo" navbar={Navbar} setNavbar={setNavbar} />
 
               </ul>
             </div>
