@@ -10,8 +10,9 @@ type cardProps = {
 
 export default function ProjCard({ image, title, info }: cardProps) {
   return (
-    <div className="bg-white border border-red-500 px-5 py-2 ">
-      <div className="rounded overflow-hidden shadow-lg object-fill">
+
+      <div className="bg-slate-400 rounded-md shadow-lg object-fill p-5 m-5
+      ">
         <Image
           className=" inline "
           src={image}
@@ -24,6 +25,6 @@ export default function ProjCard({ image, title, info }: cardProps) {
         </div>
         <button className="border rounded p-3 mb-3 ">Read More</button>
       </div>
-    </div>
+
   );
 }
