@@ -3,18 +3,20 @@
 type buttonProps={
     elementID: string
     text: string
+    text2?: string
 
 }
 
-export default function ScrollButton({elementID, text}:buttonProps) {
+export default function ScrollButton({elementID, text, text2}:buttonProps) {
     return(
-        <button className="p-5 border uppercase"
+        <button className="p-5 border uppercase transition hover:bg-purple-400"
         onClick={() => {
             const nextSection = document.getElementById(elementID)
     
             nextSection?.scrollIntoView({behavior:"smooth"})
           }}>
-            {text}
+            <div>{text}</div>
+            <div>{text2}</div>
           </button>
 
 

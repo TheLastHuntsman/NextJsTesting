@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import Navbar from "./components/navbar";
 import ProjCard from "./components/projCard";
-import headshot from "../../public/me.jpg";
+import headshot from "../../public/meslate.jpg";
 import tempImage from "../../public/8s5sCqk.jpg";
 import ScrollButton from "./components/scrollButton";
 
@@ -27,28 +27,31 @@ export default function Home() {
 
       <div
         id="aboutMeBackground"
-        className="grid h-screen place-items-center
-        bg-gradient-to-l from-purple-700 via-purple-850 to-purple-900"
+        className="grid md:h-screen place-items-center
+        bg-gradient-to-l from-purple-700 via-purple-800 to-purple-900
+        overflow-auto"
       >
         <div
           id="aboutMe"
-          className="flex max-w-7xl mx-auto gap-10
-          border-2 rounded border-cyan-500
+          className="flex flex-col md:flex-row md:max-w-7xl md:x-auto md:gap-10
+          bg-purple-800 rounded border-cyan-500
         shadow-lg p-5"
         >
-          <div id="leftAboutMe" className="object-top w-1/3">
+          <div id="leftAboutMe" className="md:w-1/3  mx-auto">
             <Image
               src={headshot}
               alt=""
               width={300}
               height={300}
-              className="border inline"
+              className="md:inline md:object-top p-5"
             />
-            <p>Name: Jordan Gooding-McGovern</p>
-            <p>Role: Junior Software Engineer</p>
-            <p>Email: Jordangm19@gmail.com</p>
+            <div id="tidbits">
+              <div className="p-1">Name: Jordan Gooding-McGovern</div>
+              <div className="p-1">Role: Junior Software Engineer</div>
+              <div className="p-1">Email: Jordangm19@gmail.com</div>
+            </div>
           </div>
-          <div id="rightAboutMe" className=" w-2/3 flex flex-col">
+          <div id="rightAboutMe" className=" md:w-2/3 flex flex-col ">
             <h1 className="text-center p-5">A little bit about me</h1>
             <h2 className="h-1/3 text-center">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
@@ -70,19 +73,22 @@ export default function Home() {
             </h2>
           </div>
         </div>
-        <div className="-mt-10">
+        <div className="invisible md:visible">
           <ScrollButton
             elementID="projectSection"
             text="Dive a little deeper"
           ></ScrollButton>
         </div>
       </div>
-      <div id="projectSection" className="h-screen bg-slate-500">
+      <div
+        id="projectSection"
+        className="flex flex-col items-center justify-center md:h-screen bg-slate-500 overflow-auto"
+      >
         <h1 className="text-center uppercase text-2xl p-5">Projects</h1>
         <div
           id="projectCards"
           className="grid grid-cols-1 md:grid-cols-3
-      text-center justify-center py-2 max-w-7xl gap-3 mx-auto"
+          text-center justify-center py-2 max-w-7xl gap-3 mx-auto"
         >
           <ProjCard
             image={tempImage}
@@ -110,9 +116,17 @@ export default function Home() {
         quaerat? Architecto, officiis."
           ></ProjCard>
         </div>
+        <div className="invisible md:visible">
+          <ScrollButton
+            elementID="contactMe"
+            text="Interested in finding out more?"
+            text2="Get in touch!"
+          ></ScrollButton>
+        </div>
+
       </div>
-      <div className="flex justify-center">
-        <form className="grid md:grid-cols-4 px-5">
+      <div id="contactMe" className="flex justify-center">
+        <form className="grid md:grid-cols-4 p-5 gap-10">
           <div className="md:col-span-2 p-3 ">
             <label
               htmlFor="firstName"
