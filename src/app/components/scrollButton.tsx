@@ -1,22 +1,23 @@
-'use client'
+"use client";
 
-type buttonProps={
-    elementID: string
-    text: string
+type buttonProps = {
+  elementID: string;
+  text: string;
+  text2?: string;
+};
 
-}
+export default function ScrollButton({ elementID, text, text2 }: buttonProps) {
+  return (
+    <button
+      className="p-5 border uppercase transition hover:bg-purple-400"
+      onClick={() => {
+        const nextSection = document.getElementById(elementID);
 
-export default function ScrollButton({elementID, text}:buttonProps) {
-    return(
-        <button className="p-5 border uppercase"
-        onClick={() => {
-            const nextSection = document.getElementById(elementID)
-    
-            nextSection?.scrollIntoView({behavior:"smooth"})
-          }}>
-            {text}
-          </button>
-
-
-    )
+        nextSection?.scrollIntoView({ behavior: "smooth" });
+      }}
+    >
+      <div>{text}</div>
+      <div>{text2}</div>
+    </button>
+  );
 }

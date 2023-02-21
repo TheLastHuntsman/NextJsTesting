@@ -62,13 +62,13 @@ export default function Navbar() {
                 navbar ? "block" : "hidden"
               }`}
             >
-              <ul className="items-center justify-center content-evenly space-y-2 md:flex md:space-x-6 md:space-y-0">
+              <ul className="items-center justify-center content-evenly space-y-2 md:flex md:space-x-7 md:space-y-0">
                 <NavbarButton pageLink="/" text="Home" navbar={Navbar} setNavbar={setNavbar} />
                 <NavbarButton pageLink="/blog" text="Blogs" navbar={Navbar} setNavbar={setNavbar} />
-                <NavbarButton pageLink="/counter" text="counter" navbar={Navbar} setNavbar={setNavbar} />
-                <NavbarButton pageLink="/snake" text="snake" navbar={Navbar} setNavbar={setNavbar} />
-                <NavbarButton pageLink="/login" text="login" navbar={Navbar} setNavbar={setNavbar} />
-                <NavbarButton pageLink="/todos" text="todo" navbar={Navbar} setNavbar={setNavbar} />
+                <NavbarButton pageLink="/counter" text="Counter" navbar={Navbar} setNavbar={setNavbar} />
+                <NavbarButton pageLink="/snake" text="Snake" navbar={Navbar} setNavbar={setNavbar} />
+                <NavbarButton pageLink="/login" text="Login" navbar={Navbar} setNavbar={setNavbar} />
+                <NavbarButton pageLink="/todos" text="Todo" navbar={Navbar} setNavbar={setNavbar} />
 
               </ul>
             </div>
