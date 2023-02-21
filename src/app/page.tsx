@@ -5,12 +5,16 @@ import ProjCard from "./components/projCard";
 import headshot from "../../public/meslate.jpg";
 import tempImage from "../../public/8s5sCqk.jpg";
 import ScrollButton from "./components/scrollButton";
+import ScrollToTopButton from "./components/scrollToTopButton";
 
 //import styles from './page.module.css'
 
 export default function Home() {
   return (
-    <main className={"bg-slate-600 font-serif scroll-smooth text-white"}>
+    <main
+      id="mainPage"
+      className={"bg-slate-600 font-serif scroll-smooth text-slate-300"}
+    >
       <div
         id="landing"
         className="grid h-screen place-items-center
@@ -123,57 +127,69 @@ export default function Home() {
             text2="Get in touch!"
           ></ScrollButton>
         </div>
-
       </div>
-      <div id="contactMe" className="flex justify-center">
-        <form className="grid md:grid-cols-4 p-5 gap-10">
-          <div className="md:col-span-2 p-3 ">
-            <label
-              htmlFor="firstName"
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            >
-              First Name
-            </label>
-            <input
-              id="firstName"
-              className="block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            ></input>
+      <div
+        id="contactMe"
+        className="flex  justify-center items-center md:h-screen md:mx-auto"
+      >
+        <div
+          id="formWrapper"
+          className="flex flex-col justify-center items-center md:m-auto md:h-2/4 md:w-1/2 text-black"
+        >
+          <h1 className="text-7xl text-center">Say Hello!</h1>
+          <form className="grid md:grid-cols-7 p-5">
+            <div className="md:col-span-3 p-3 ">
+              <label
+                htmlFor="firstName"
+                className="block uppercase tracking-wide  text-xs font-bold mb-2"
+              >
+                First Name
+              </label>
+              <input
+                id="firstName"
+                className="block w-full bg-gray-200  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              ></input>
+            </div>
+            <div className="md:col-span-4  p-3 ">
+              <label
+                htmlFor="lastName"
+                className="block uppercase tracking-wide  text-xs font-bold mb-2"
+              >
+                Last Name
+              </label>
+              <input
+                id="lastName"
+                className="block w-full bg-gray-200  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              ></input>
+            </div>
+            <div className="md:col-span-5 p-3 ">
+              <label className="block uppercase tracking-wide  text-xs font-bold mb-2">
+                Email
+              </label>
+              <input className="block w-full bg-gray-200  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></input>
+            </div>
+            <div className="md:col-span-2 p-3 ">
+              <label className="block uppercase tracking-wide  text-xs font-bold mb-2">
+                Phone Number
+              </label>
+              <input className="block w-full bg-gray-200  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></input>
+            </div>
+            <div className="md:col-span-7 p-3 ">
+              <label className="block uppercase tracking-wide  text-xs font-bold mb-2 text-center">
+                Talk to me, what would you like to say?
+              </label>
+              <textarea className="block w-full bg-gray-200  border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 resize-y"></textarea>
+            </div>
+            <button className="inline rounded md:col-start-4 md:col-end-5 border border-purple-300 shadow-md bg-blue-400 p-3">
+              Hit Me
+            </button>
+          </form>
+          <div className="">
+           <ScrollToTopButton></ScrollToTopButton>
           </div>
-          <div className="md:col-span-2 p-3 ">
-            <label
-              htmlFor="lastName"
-              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-            >
-              Last Name
-            </label>
-            <input
-              id="lastName"
-              className="block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-            ></input>
-          </div>
-          <div className="md:col-span-3 p-3 ">
-            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-              Email
-            </label>
-            <input className="block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></input>
-          </div>
-          <div className="md:col-span-1 p-3 ">
-            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-              Phone Number
-            </label>
-            <input className="block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></input>
-          </div>
-          <div className="md:col-span-4 p-3 ">
-            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2 text-center">
-              Talk to me, what would you like to say?
-            </label>
-            <textarea className="block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 resize-y"></textarea>
-          </div>
-          <button className="rounded md:col-start-2 md:col-end-4 border border-purple-300 shadow-md bg-blue-400 p-3">
-            Hit Me
-          </button>
-        </form>
+        </div>
       </div>
     </main>
   );
+  //footer 3/4 contact 1/4 footer
 }
