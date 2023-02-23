@@ -15,20 +15,23 @@ export default function Home() {
       id="mainPage"
       className={"bg-slate-600 font-serif scroll-smooth text-slate-300"}
     >
-      <div
-        id="landing"
-        className="grid h-screen place-items-center
-      bg-gradient-to-r from-purple-700 via-purple-850 to-purple-900"
-      >
-        <h1 className={"text-3xl font-bold underline text-center"}>
-          Welcome G
-        </h1>
-        <ScrollButton
-          elementID="aboutMeBackground"
-          text="Click me to find out more"
-        ></ScrollButton>
+      {" "}
+      <div id="landingBg" className="relative h-screen">
+        <div className="section flex">
+          <spanT></spanT>
+          <spanT></spanT>
+          <spanT></spanT>
+          <spanT></spanT>
+          <spanT></spanT>
+          <spanT></spanT>
+          <spanT></spanT>
+          <spanT></spanT>
+          <spanT></spanT>
+          <spanT></spanT>
+          <div className="text-center justify-center m-auto">Hello</div>
+        </div>
       </div>
-
+      
       <div
         id="aboutMeBackground"
         className="grid md:h-screen place-items-center
@@ -58,10 +61,9 @@ export default function Home() {
           <div id="rightAboutMe" className=" md:w-2/3 flex flex-col ">
             <h1 className="text-center p-5">A little bit about me</h1>
             <h2 className="h-1/3 text-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
-              soluta, odit nostrum esse culpa est placeat ratione, ab quisquam
-              deserunt error reiciendis laboriosam asperiores doloremque veniam
-              ex quaerat? Architecto, officiis.
+              Hello! I'm Jordan soluta, odit nostrum esse culpa est placeat
+              ratione, ab quisquam deserunt error reiciendis laboriosam
+              asperiores doloremque veniam ex quaerat? Architecto, officiis.
             </h2>
             <h2 className="h-1/3 text-center">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
@@ -185,7 +187,7 @@ export default function Home() {
             </button>
           </form>
           <div className="">
-           <ScrollToTopButton></ScrollToTopButton>
+            <ScrollToTopButton></ScrollToTopButton>
           </div>
         </div>
       </div>
