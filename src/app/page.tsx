@@ -17,21 +17,33 @@ export default function Home() {
     >
       {" "}
       <div id="landingBg" className="relative h-screen">
-        <div className="section flex">
-          <spanT></spanT>
-          <spanT></spanT>
-          <spanT></spanT>
-          <spanT></spanT>
-          <spanT></spanT>
-          <spanT></spanT>
-          <spanT></spanT>
-          <spanT></spanT>
-          <spanT></spanT>
-          <spanT></spanT>
-          <div className="text-center justify-center m-auto">Hello</div>
+        <div className="section overflow-hidden grid place-items-center">
+          <span className="star"></span>
+          <span className="star"></span>
+          <span className="star"></span>
+          <span className="star"></span>
+          <span className="star"></span>
+          <span className="star"></span>
+          <span className="star"></span>
+          <span className="star"></span>
+          <span className="star"></span>
+          <span className="star"></span>
+          <span className="text-center justify-center m-auto">
+            <h1 className={"text-3xl font-bold underline text-center capitalize"}>
+              Welcome
+            </h1>
+            <p className="text-xl">To the home of JCXYZ</p>
+
+            <div id="landingButtonWrapper" className="mt-10">
+              <ScrollButton
+                elementID="aboutMeBackground"
+                text="Click me to find out more"
+              ></ScrollButton>
+            </div>
+          </span>
         </div>
       </div>
-      
+      <Navbar />
       <div
         id="aboutMeBackground"
         className="grid md:h-screen place-items-center

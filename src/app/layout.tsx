@@ -1,12 +1,28 @@
+"use client"
+
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import { usePathname } from 'next/navigation';
+
+const IsHomeCheck = () => {
+    const pathName = usePathname();
+    if ( pathName === "/") {
+       return true
+    } else {
+       return false
+    }
+}
+
+
+
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang="en">
       {/*
@@ -15,7 +31,7 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <Navbar />
+        {(IsHomeCheck())? <></>:<Navbar />}
         {children}
         <Footer />
       </body>
