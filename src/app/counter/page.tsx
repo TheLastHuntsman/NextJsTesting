@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react"
 
-export default function loginPage(){
+export default function Counter(){
 
     const [count, setCount] = useState(0)
 
