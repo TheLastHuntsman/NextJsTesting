@@ -13,11 +13,11 @@ export default function Home() {
   return (
     <main
       id="mainPage"
-      className={"bg-slate-600 font-serif scroll-smooth text-slate-300"}
+      className={"bg-slate-600 font-serif scroll-smooth text-slate-300 "}
     >
       {" "}
       <div id="landingBg" className="relative h-screen">
-        <div className="section overflow-hidden grid place-items-center">
+        <div className="starbox overflow-hidden grid place-items-center ">
           <span className="star"></span>
           <span className="star"></span>
           <span className="star"></span>
@@ -29,12 +29,12 @@ export default function Home() {
           <span className="star"></span>
           <span className="star"></span>
           <span className="text-center justify-center m-auto">
-            <h1 className={"text-3xl font-bold underline text-center capitalize"}>
+            <h1 className={"text-3xl font-bold underline text-center capitalize slide-left"}>
               Welcome
             </h1>
             <p className="text-xl">To the home of JCXYZ</p>
 
-            <div id="landingButtonWrapper" className="mt-10">
+            <div id="landingButtonWrapper" className={"mt-10"}>
               <ScrollButton
                 elementID="aboutMeBackground"
                 text="Click me to find out more"
@@ -43,18 +43,18 @@ export default function Home() {
           </span>
         </div>
       </div>
-      <Navbar />
+      <Navbar id=""/>
       <div
         id="aboutMeBackground"
         className="grid md:h-screen place-items-center
-        bg-gradient-to-l from-purple-700 via-purple-800 to-purple-900
+        bg-[#3D4849]
         overflow-auto"
       >
         <div
           id="aboutMe"
           className="flex flex-col md:flex-row md:max-w-7xl md:x-auto md:gap-10
           bg-purple-800 rounded border-cyan-500
-        shadow-lg p-5"
+        shadow-lg p-5 pt-8"
         >
           <div id="leftAboutMe" className="md:w-1/3  mx-auto">
             <Image
@@ -65,7 +65,7 @@ export default function Home() {
               className="md:inline md:object-top p-5"
             />
             <div id="tidbits">
-              <div className="p-1">Name: Jordan Gooding-McGovern</div>
+              <div className="p-1 slide-in-from-right-full">Name: Jordan Gooding-McGovern</div>
               <div className="p-1">Role: Junior Software Engineer</div>
               <div className="p-1">Email: Jordangm19@gmail.com</div>
             </div>
@@ -73,7 +73,7 @@ export default function Home() {
           <div id="rightAboutMe" className=" md:w-2/3 flex flex-col ">
             <h1 className="text-center p-5">A little bit about me</h1>
             <h2 className="h-1/3 text-center">
-              Hello! I'm Jordan soluta, odit nostrum esse culpa est placeat
+              Hello! I am Jordan soluta, odit nostrum esse culpa est placeat
               ratione, ab quisquam deserunt error reiciendis laboriosam
               asperiores doloremque veniam ex quaerat? Architecto, officiis.
             </h2>

@@ -5,11 +5,15 @@ import Link from "next/link";
 import { useState } from "react";
 import NavbarButton from "./navBarButton"
 
+interface navbarProps{
+  id?: string
+}
+
 //TODO add light grey hover
-export default function Navbar() {
+export default function Navbar({id}: navbarProps) {
   const [navbar, setNavbar] = useState(false);
   return (
-    <div className="sticky top-0">
+    <div id={id} className="sticky top-0">
       <nav className="w-full bg-gray-800 shadow">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
