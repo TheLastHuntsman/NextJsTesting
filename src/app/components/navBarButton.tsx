@@ -9,9 +9,9 @@ type ButtonProps = {
 
 export default function NavbarButton({ pageLink, text, navbar, setNavbar }: ButtonProps) {
   return (
-      <li className="flex text-white py-3
-      hover:outline outline-offset-4
-      hover:text-xl">
+      <li className="flex text-white py-3 md:text-2xl p-2 mx-auto
+      hover:border-b hover:border-b-purple-500 hover:text-purple-500
+      hover:scale-110">
         <Link onClick={() => setNavbar(!navbar)} href={pageLink}>{text}</Link>
       </li>
   );
