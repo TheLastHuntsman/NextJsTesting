@@ -1,5 +1,5 @@
 import ProjCard from "../projCard"
-import tempImage from "../../../../public/8s5sCqk.jpg";
+import tempImage from "../../../../public/placeholderProj.jpg";
 import ScrollButton from "../scrollButton";
 
 export default function projectSection(){
@@ -9,9 +9,10 @@ export default function projectSection(){
     return (
         <div
         id="projectSection"
-        className="flex flex-col items-center justify-center md:h-screen  overflow-auto"
+        className="flex flex-col items-center justify-center md:min-h-screen  overflow-auto
+        "
       >
-        <h1 className="text-center uppercase text-2xl p-5">Projects</h1>
+        <h1 className="text-center uppercase text-2xl md:text-8xl p-5">Projects</h1>
         <div
           id="projectCards"
           className="grid grid-cols-1 md:grid-cols-3
@@ -20,6 +21,7 @@ export default function projectSection(){
           <ProjCard
             image={tempImage}
             title="Hello"
+            tabIndex={0}
             info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
         soluta, odit nostrum esse culpa est placeat ratione, ab quisquam
         deserunt error reiciendis laboriosam asperiores doloremque veniam ex
@@ -29,6 +31,7 @@ export default function projectSection(){
           <ProjCard
             image={tempImage}
             title="Hello"
+            tabIndex={1}
             info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
         soluta, odit nostrum esse culpa est placeat ratione, ab quisquam
         deserunt error reiciendis laboriosam asperiores doloremque veniam ex
@@ -37,6 +40,7 @@ export default function projectSection(){
           <ProjCard
             image={tempImage}
             title="Hello"
+            tabIndex={2}
             info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
         soluta, odit nostrum esse culpa est placeat ratione, ab quisquam
         deserunt error reiciendis laboriosam asperiores doloremque veniam ex

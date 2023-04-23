@@ -8,13 +8,13 @@ import NavbarButton from "./navBarButton"
 interface navbarProps{
   id?: string
 }
-
+//nav className="w-full bg-gray-800 shadow
 //TODO add light grey hover
 export default function Navbar({id}: navbarProps) {
   const [navbar, setNavbar] = useState(false);
   return (
     <div id={id} className="sticky top-0">
-      <nav className="w-full bg-gray-800 shadow">
+      <nav className="w-full bg-[#4B7F52]">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">

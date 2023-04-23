@@ -14,12 +14,14 @@ export default function Home() {
   return (
     <main
       id="mainPage"
-      className={"techBG font-serif scroll-smooth text-slate-300 "}
+      className={"techBG font-serif scroll-smooth text-[#CECFC7] "}
     >
       <LandingPage/>
       <Navbar id=""/>
       <AboutMe/>
+      <hr className="bg-[#4B7F52]"></hr>
       <ProjectSection/>
+      <hr className="bg-[#4B7F52]"></hr>
       <ContactMe/>
     </main>
   );

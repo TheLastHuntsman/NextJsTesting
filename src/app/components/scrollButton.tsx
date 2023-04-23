@@ -9,7 +9,7 @@ type buttonProps = {
 export default function ScrollButton({ elementID, text, text2 }: buttonProps) {
   return (
     <button
-      className="p-5 border uppercase transition hover:bg-purple-400"
+      className="p-5 border uppercase transition hover:bg-[#4B7F52]"
       onClick={() => {
         const nextSection = document.getElementById(elementID);
 

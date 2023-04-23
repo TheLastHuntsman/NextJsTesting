@@ -7,15 +7,15 @@ export default function ContactMe(){
     return (
         <div
         id="contactMe"
-        className="flex  justify-center items-center md:h-screen md:mx-auto"
+        className="flex  justify-center items-center md:min-h-screen md:mx-auto py-3"
       >
         <div
           id="formWrapper"
-          className="flex flex-col justify-center items-center md:m-auto md:h-2/4 md:w-1/2 text-slate-300
-          border-2 border-slate-300 rounded-lg bg-slate-300 bg-opacity-5
-          shadow-lg shadow-purple-500 mix-blend-normal"
+          className="flex flex-col justify-center items-center md:m-auto md:h-2/4 md:w-1/2 overflow-auto
+          border-2 border-[#CECFC7] rounded-lg bg-slate-300 bg-opacity-5
+          shadow-lg shadow-[#4B7F52] mix-blend-normal"
         >
-          <h1 className="text-7xl text-center">Say Hello!</h1>
+          <h1 className="text-7xl text-center p-3">Say Hello!</h1>
           <form className="grid md:grid-cols-7 p-5">
             <div className="md:col-span-3 p-3 ">
               <label
@@ -64,7 +64,10 @@ export default function ContactMe(){
               <textarea className="block w-full bg-slate-400  border border-gray-200 rounded py-3 px-4 leading-tight
               focus:outline-none focus:bg-white focslatebg-slate-200rder-gray-500 greenze-y text-black"></textarea>
             </div>
-            <button className="inline rounded md:col-start-4 md:col-end-5 border border-purple-300 shadow-md bg-blue-400 p-3">
+            <button className="rounded md:col-start-4 md:col-end-5 p-3
+            border border-[#CECFC7] 
+            transition hover:bg-[#4B7F52]
+            ">
               Hit Me
             </button>
           </form>
