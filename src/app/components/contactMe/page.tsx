@@ -65,10 +65,10 @@ export default function ContactMe(){
               focus:outline-none focus:bg-white focslatebg-slate-200rder-gray-500 greenze-y text-black"></textarea>
             </div>
             <button className="rounded md:col-start-4 md:col-end-5 p-3
-            border border-[#CECFC7] 
+            border border-[#CECFC7]
             transition hover:bg-[#4B7F52]
             ">
-              Hit Me
+              Fire away!
             </button>
           </form>
           <div className="">

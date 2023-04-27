@@ -37,7 +37,7 @@ export default function AboutMe(){
           <div id="rightAboutMe" className=" md:w-2/3 flex flex-col leading-7 md:">
             <h1 className="text-center p-5 text-5xl underline capitalize"
             >
-              Tidbits about me
+              At a glance
             </h1>
             <h2 className="h-1/3 text-left text-sm md:text-2xl p-2 flex-1">
               Hello! I&apos;m Jordan, a young technomancer who loves all learning about all things computer and tech.

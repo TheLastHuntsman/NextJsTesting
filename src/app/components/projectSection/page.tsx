@@ -22,29 +22,20 @@ export default function projectSection(){
             image={tempImage}
             title="Hello"
             tabIndex={0}
-            info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
-        soluta, odit nostrum esse culpa est placeat ratione, ab quisquam
-        deserunt error reiciendis laboriosam asperiores doloremque veniam ex
-        quaerat? Architecto, officiis."
+            info="Placeholder!"
           ></ProjCard>
 
           <ProjCard
             image={tempImage}
             title="Hello"
             tabIndex={1}
-            info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
-        soluta, odit nostrum esse culpa est placeat ratione, ab quisquam
-        deserunt error reiciendis laboriosam asperiores doloremque veniam ex
-        quaerat? Architecto, officiis."
+            info="Placeholder!"
           ></ProjCard>
           <ProjCard
             image={tempImage}
             title="Hello"
             tabIndex={2}
-            info="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
-        soluta, odit nostrum esse culpa est placeat ratione, ab quisquam
-        deserunt error reiciendis laboriosam asperiores doloremque veniam ex
-        quaerat? Architecto, officiis."
+            info="Placeholder!"
           ></ProjCard>
         </div>
         <div className="invisible md:visible">
