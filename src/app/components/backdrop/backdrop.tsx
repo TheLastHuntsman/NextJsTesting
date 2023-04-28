@@ -6,8 +6,8 @@ type backdropProps = {
     children?: any;
   };
 
-
-const backdrop = ({ children, onClick}: backdropProps) => {
+ // export default function NavbarButton({ pageLink, text, navbar, setNavbar }: ButtonProps) {
+export default function Backdrop({ children, onClick}: backdropProps) {
     return (
         <motion.div
             className="backdrop
@@ -26,5 +26,3 @@ const backdrop = ({ children, onClick}: backdropProps) => {
         </motion.div>
     )
 }
-
-export default backdrop;

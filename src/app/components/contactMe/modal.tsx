@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Children } from 'react';
-import Backdrop from '../backdrop/page';
+import Backdrop from '../backdrop/backdrop';
 
 const dropIn = {
     hidden: {
