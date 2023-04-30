@@ -175,3 +175,21 @@
     }
   }
   
+.snekButton {
+    margin: 0;
+    padding: 8px 18px;
+    min-width: 120px;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: white;
+    background-color: #0170f3;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(1, 112, 243, 0.3);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

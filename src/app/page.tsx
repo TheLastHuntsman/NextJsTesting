@@ -1,3 +1,5 @@
+import type { AppProps } from "next/app";
+
 import Image from "next/image";
 
 import Navbar from "./components/navbar";
