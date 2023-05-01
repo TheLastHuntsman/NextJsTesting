@@ -19,7 +19,7 @@ export default function ContactMeForm(){
       >
         <div
           id="formWrapper"
-          className="flex flex-col justify-center items-center md:m-auto md:h-2/4 md:w-1/2 overflow-auto
+          className="flex flex-col justify-center items-center md:m-auto md:h-3/4 overflow-auto
           border-2 border-[#CECFC7] rounded-lg bg-slate-300 bg-opacity-5
           shadow-lg shadow-[#4B7F52] mix-blend-normal"
         >

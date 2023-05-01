@@ -1,11 +1,13 @@
 import SnakeGame from '../components/snakeGame/page';
 
-export default function blogPage(){
+export default function SnakeGamePage(){
     return(
         <>
-        <h1>Snek</h1>
+        <div className="techBG flex
+        justify-center items-center">
         <SnakeGame />
-        <button>button</button>
+
+        </div>
         </>
     )
 }

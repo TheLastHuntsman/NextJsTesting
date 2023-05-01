@@ -11,7 +11,7 @@ export default function Backdrop({ children, onClick}: backdropProps) {
     return (
         <motion.div
             className="backdrop
-            h-full w-full absolute t-0 l-0
+            min-h-[300vh] min-w-full absolute t-0 l-0
             flex justify-center items-center
             bg-[#000000e1]"
 

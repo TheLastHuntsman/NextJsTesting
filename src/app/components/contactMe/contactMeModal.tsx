@@ -11,10 +11,10 @@ const dropIn = {
         y: 0,
         opacity: 1,
         transition: {
-            delay: 0.5,
+            delay: 0.2,
             duration: 0.1,
             type: "spring",
-            stiffness: 100
+            stiffness: 50
         }
     },
     exit: {
@@ -44,7 +44,6 @@ const Modal = ({handleClose, text, modalOpen, children}: modalProps) => {
             exit="exit"
             >
                 {children}
-                <button onClick={handleClose}>Close</button>
             </motion.div>
         </Backdrop>
     )

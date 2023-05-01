@@ -360,7 +360,7 @@ export default function SnakeGame() {
   }, [previousVelocity]);
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center h-[90vh]">
       <main className="border border-6 shadow-lg
       overflow-hidden inline-block relative">
         <canvas
@@ -369,8 +369,9 @@ export default function SnakeGame() {
           width={canvasWidth + 1}
           height={canvasHeight + 1}
         />
-        <section className= "flex py-2 h-[66px] px-18 justify-between items-center">
-          <div className="score p-2">
+        <section className= "flex py-2 h-[66px] px-18 justify-between items-center bg-slate-500 text-white"
+        >
+          <div id="score" className="p-2 ">
             <p className="">
               <FontAwesomeIcon icon={["fas", "star"]}
               className="px-1"/>
