@@ -1,10 +1,11 @@
+import type { AppProps } from "next/app";
+
 import Image from "next/image";
 
 import Navbar from "./components/navbar";
 import LandingPage from "./components/landingPage/page";
 import AboutMe from "./components/aboutMe/page";
 import ProjectSection from "./components/projectSection/page";
-import ContactMe from "./components/contactMe/page";
 
 
 
@@ -22,7 +23,6 @@ export default function Home() {
       <hr className="bg-[#4B7F52]"></hr>
       <ProjectSection/>
       <hr className="bg-[#4B7F52]"></hr>
-      <ContactMe/>
     </main>
   );
   //footer 3/4 contact 1/4 footer
